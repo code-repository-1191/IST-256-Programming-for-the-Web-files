@@ -1,0 +1,75 @@
+* {
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+h1 {
+    font-size: 100px;
+    color: white;
+}
+
+body {
+    background-color: black;
+}
+
+.top-header {
+    display: block;
+    /* background-image: url("images/soccerlions.jpg"); */
+    background-size: auto;
+    height: 50vh;
+    /*----------------- */
+    background-repeat: repeat, repeat;
+    background-image: url("images/roarofgoal_text.png"), url("images/soccerlions.jpg");
+    background-blend-mode: difference;
+
+    border-radius: 5%;
+}
+.bottom-header {
+    display: block;
+    padding: 8px;    
+    background-image: url("images/sg.jpg");
+    background-position-y: bottom;
+    height: 1.5cm;
+    
+}
+nav {
+    
+    padding: 0;
+    display: block;
+    position: relative;
+    
+}
+
+/* https://www.w3schools.com/css/css_navbar_horizontal.asp */
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+li {
+    display:contents;
+    font-size: 1cm;
+    font-weight: 300;
+    
+}
+li a{
+    color: gold;
+}
+li :hover{
+    background-color:forestgreen;
+}
+
+
+p {
+    color: white;
+    text-indent: 30px;
+    text-transform: uppercase;
+  }
+
+iframe {
+    display: block;
+    margin: 0 auto;
+    position: relative;
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heart Shape</title>
+    <style>
+        * {
+          padding: 0;
+          margin: 0;
+        }
+        canvas {
+          background: #ff68c8;
+          display: block;
+          margin: 0 auto;
+        }
+        h1 {text-align: center;}
+      </style>
+</head>
+<header>
+    <h1>Heart to you <3</h1>
+</header>
+<body>
+
+<canvas id="heartCanvas" width="400" height="400"></canvas>
+
+<script>
+    // Get the canvas element and context
+    const canvas = document.getElementById('heartCanvas');
+    const ctx = canvas.getContext('2d');
+
+    // Start drawing the heart
+    ctx.beginPath();
+    ctx.moveTo(200, 300);
+
+    // Draw the left part of the heart
+    ctx.arc(150, 150, 50, Math.PI, 0, false);
+
+    // Draw the right part of the heart
+    ctx.arc(250, 150, 50, Math.PI, 0, false);
+
+    // Complete the bottom part of the heart
+    ctx.lineTo(200, 300);
+
+    // Set the fill color and fill the heart shape
+    ctx.fillStyle = 'red';
+    ctx.fill();
+
+    // Optionally, add a border around the heart
+    ctx.lineWidth = 5;
+    ctx.strokeStyle = 'black';
+    ctx.stroke();
+</script>
+
+</body>
+</html>

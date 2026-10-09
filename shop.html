@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Shop</title>
+    <script type="text/javascript" src="cart.js"></script>
+
+    <link rel="stylesheet" href="styles.css">
+    
+</head>
+
+<header>
+    <h3>Welcome to Nintendo World</h3>
+    <p>Your ultimate source for all things Nintendo!</p>
+</header>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="shop.html">Shop</a>
+    <a href="games.html">Games</a>
+    <a href="login.html">Login</a>
+</nav>
+
+<body>
+    <div class="product">
+        <h3 class="itemName">Game</h3>
+        <img class="productImage" src="/images/pepperonipizza.png">
+        <p class="productParagraph" style="text-align:left">put some pep in your step</p>
+       
+        <select class="custom-select" id="qtyPiz" style="width:200px;">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+        </select>
+        <button class="btnAddtoCart" value="14.59" onclick="addPizza(14.59, document.getElementById('qtyPiz').value)">Add to Cart</button>
+    </div>
+</body>
+
+<footer>
+    <p>&co
